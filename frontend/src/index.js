@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 
-
-
-
-
 function Counter() {
   let [count, setCount] = useState(0);
   let [data, setData] = useState([]);
