@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "install-frontend": "cd frontend && npm install",
-    "builds": "cd frontend && npm run build",
-    "heroku-postbuild": "npm run install-frontend && npm run builds"
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "keywords": [],
   "author": "",
