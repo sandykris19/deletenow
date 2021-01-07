@@ -7,13 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "install-frontend": "cd frontend && npm install",
-    "build": "cd frontend && npm run build",
-    "heroku-postbuild": "npm run install-frontend && npm run build"
+    "builds": "cd frontend && npm run build",
+    "heroku-postbuild": "npm run install-frontend && npm run builds"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "heroku": "^7.47.7"
   }
 }
