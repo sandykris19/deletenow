@@ -5,7 +5,9 @@ const app = express();
 app.use(express.json());
 app.use(urlencoded({ extended: false }));
 
-app.get("/");
+app.get("/", (req, res) => {
+  res.send("hello");
+});
 
 app.get("/data", (req, res) => {
   const user = { name: "sandeep", age: 24 };
